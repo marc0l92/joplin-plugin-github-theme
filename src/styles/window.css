@@ -8,6 +8,11 @@
     border-right: 1px solid var(--color-github-sidebar-border);
 }
 
+.sidebar {
+    background-color: var(--color-github-sidebar-background);
+    color: var(--color-github-sidebar-text);
+}
+
 .sidebar div {
     color: var(--color-github-sidebar-text);
 }
@@ -49,10 +54,17 @@
     border-width: 0;
 }
 
+.sidebar button>span {
+    color: var(--color-github-button-text) !important;
+}
+
 .sidebar button:hover {
     background-color: var(--color-github-button-background-active);
-    color: var(--color-github-button-text);
     border-color: none;
+}
+
+.sidebar button:hover>span {
+    color: var(--color-github-button-text);
 }
 
 /**************************************************************************************************
@@ -65,18 +77,18 @@
     border-right: 1px solid var(--color-github-notelist-border);
 }
 
-.resizableLayoutItem.rli-noteList div:has(div.search-bar) {
-    background: none;
-    border-bottom: 1px solid var(--color-github-notelist-border);
-}
-
-.resizableLayoutItem.rli-noteList .search-bar input {
-    background-color: none;
+.item-list.note-list {
+    background-color: var(--color-github-notelist-background);
+    color: var(--color-github-notelist-text);
 }
 
 .item-list.note-list .list-item-container.selected.note-list-item {
     background-color: var(--color-github-notelist-background-active);
     color: var(--color-github-notelist-text-active);
+}
+
+.item-list.note-list .list-item-container.note-list-item>a {
+    color: var(--color-github-notelist-text-active) !important;
 }
 
 .item-list.note-list .list-item-container.note-list-item:hover {
@@ -85,6 +97,40 @@
 }
 
 .item-list.note-list .list-item-container.note-list-item::before {
-    color: var(--color-github-notelist-text);
     border: 0;
+}
+
+.resizableLayoutItem.rli-noteList .search-bar input {
+    background-color: var(--color-github-input-background);
+    color: var(--color-github-input-text);
+    border: 1px solid var(--color-github-notelist-border);
+}
+
+.resizableLayoutItem.rli-noteList .search-bar button {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.resizableLayoutItem.rli-noteList .search-bar button:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.resizableLayoutItem.rli-noteList .search-bar button>span {
+    color: var(--color-github-input-text) !important;
+}
+
+.resizableLayoutItem.rli-noteList button {
+    background-color: var(--color-github-button-background);
+}
+
+.resizableLayoutItem.rli-noteList button:hover {
+    background-color: var(--color-github-button-background-active);
+    border-color: none;
+}
+
+.resizableLayoutItem.rli-noteList button:hover>span {
+    color: var(--color-github-button-text);
+}
+
+.resizableLayoutItem.rli-noteList>div>div>div {
+    background: none;
 }

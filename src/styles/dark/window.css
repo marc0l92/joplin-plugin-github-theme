@@ -1,304 +1,40 @@
-/**************************************************************************************************
- *  VARIABLES
- *************************************************************************************************/
- :root {
-    --color-main-text: #222222;
-    --color-main-background: #ffffff;
-    --color-main-background-translucent: rgba(255, 255, 255, 1);
-    --color-background-hover: #f5f5f5;
-    --color-background-dark: #ededed;
-    --color-background-darker: #dbdbdb;
-    --color-placeholder-light: #e6e6e6;
-    --color-placeholder-dark: #ccc;
-    --color-primary: #3b4854;
-    --color-primary-light: #ebedee;
-    --color-primary-text: #fff;
-    --color-primary-text-dark: #ededed;
-    --color-primary-element: #3b4854;
-    --color-primary-element-light: #5b6f81;
-    --color-error: #e9322d;
-    --color-warning: #eca700;
-    --color-success: #46ba61;
-    --color-text-maxcontrast: #767676;
-    --color-text-light: #222;
-    --color-text-lighter: #767676;
-    --color-box-shadow: rgba(77, 77, 77, 0.5);
-    --color-border: #ededed;
-    --color-border-dark: #dbdbdb;
-    --border-radius: 3px;
-    --border-radius-large: 10px;
-    --border-radius-pill: 100px;
-    --font-face: "Noto Sans", sans-serif;
-    --font-size: 13px;
-    --default-line-height: 24px;
-    --animation-quick: 100ms;
-    --animation-slow: 300ms;
-    --header-height: 50px;
-    --element-height:40px;
+:root {
+    /* Notebooks */
+    --color-notebooks-background: #24292e;
+    --color-notebooks-text: #6a737d;
+    --color-notebooks-text-active: #e1e4e8;
+    --color-notebooks-border: #1b1f23;
+    /* Notes list */
+    --color-notelist-background: #1f2428;
+    --color-notelist-background-active: #282e34;
+    --color-notelist-text: #d1d5da;
+    --color-notelist-text-active: #e1e4e8;
+    --color-notelist-border: #1b1f23;
+    /* Note */
+    --color-note-background: #24292e;
+    --color-note-background-active: #2b3036;
+    --color-note-text: #e1e4e8;
+    --color-note-text-1: #b392f0;
+    --color-note-text-2: #ffab70;
+    --color-note-text-3: #79b8ff;
+    --color-note-text-4: #f97583;
+    --color-note-text-5: #85e89d;
+    /**/
+    --color-bedge-background: #0366d6;
+    --color-bedge-text: #ffffff;
+    --color-button-background: #176f2c;
+    --color-button-text: #dcffe4;
+    --color-link: #79b8ff;
 }
 
-/**************************************************************************************************
-* GENERAL
-**************************************************************************************************/
-
-html, body {
-    background-color: var(--color-main-background);
-    line-height: var(--default-line-height);
-    color: var(--color-main-text);
-    font-weight: normal;
-    font-size: var(--font-size);
-    font-family: var(--font-face);
-}
-
-mark {
-    background-color: var(--color-text-lighter) !important;
-    padding: 3px;
-}
-
-/**************************************************************************************************
- *  PANELS
- *************************************************************************************************/
-
- /* Add border to all panels, Set minimum width for all panels */
-.rli-root > .resizableLayoutItem {
-    border-right: 2px solid var(--color-border) !important;
-    min-width: 200px !important;
-}
-
-/* Ensure panels expand to fill parent */
-.rli-root > .resizableLayoutItem > div, .rli-root > .resizableLayoutItem > .resizableLayoutItem > div {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-/* Hide Scrollbar */
-::-webkit-scrollbar{
-    width: 4px !important;
-}
-
-/************************************************************************************************
-* LIST ITEMS
-************************************************************************************************/
-
-/* Set height of list items */
-.list-item-container{
-    min-height: var(--element-height);
-}
-
-/* Change color of selected list item */
-.list-item-container.selected {
-    background-color: var(--color-background-hover) !important;
-}
-
-/* change color of hovered list item */
-.list-item-container.selected:hover {
-    background-color: var(--color-background-hover) !important;
-}
-
-.list-item-container:hover {
-    background-color: var(--color-background-dark) !important;
-}
-
-
-/**************************************************************************************************
- *  SIDEBAR
- *************************************************************************************************/
-/* Hide all Notes */
-.all-notes {
-    display: none !important;
-}
-
-/* Set sidebar colors */
 .sidebar {
-    background-color: var(--color-main-background) !important;
-    color: var(--color-main-text) !important;
+    background-color: var(--color-notebooks-background);
 }
 
-.sidebar > div > div:nth-child(1), .sidebar > div > div:nth-child(3) {
-    padding: 5px 0;
+.item-list.note-list {
+    background-color: var(--color-notelist-background);
 }
 
-/* Make sidebar headings visible */
-.sidebar .list-item, .sidebar div, .sidebar span {
-    color: var(--color-main-text) !important;
-    opacity: 1;
-}
-
-/* making icons the same width so text aligns */
-.sidebar .fas:first-of-type {
-    width: var(--base-size-18);
-    color: var(--color-main-text) !important;
-
-}
-
-/* Make icons the same color as text */
-.sidebar [class^="icon-"],.sidebar [class*=" icon-"]{
-    color:var(--color-main-text) !important;
-}
-
-/* Right Justify Notebook Counters */
-.sidebar .list-item div {
-    margin-left: auto !important;
-    margin-right: 10px;
-    color: var(--color-main-text) !important;
-}
-
-
-/**************************************************************************************************
- *  Sync Button
- *************************************************************************************************/
-
-/* synchronize button */
-.sidebar div:last-child > button {
-    border: none !important;
-    background-color: var(--color-background-darker) !important;
-    color: var(--color-main-text);
-}
-.sidebar div:last-child > button:hover {
-    background-color: var(--color-background-dark) !important;
-}
-
-.sidebar > div:last-of-type > button span {
-  text-transform: uppercase !important;
-}
-
-/**************************************************************************************************
- *  Note List
- *************************************************************************************************/
-
- .rli-noteList > div > div > div {
-    border: none !important;
-}
-
-.note-list {
-    background-color: var(--color-main-background) !important;
-    border: none;
-    opacity: 1;
-    width: 100% !important;
-    padding: 3px 0;
-}
-
-
-.note-list .list-item-container{
-    border: none !important;
-    padding: 10px;
-    height: var(--element-height) !important;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-items: start;
-    align-items: center;
-    background-color: var(--color-main-background);
-    width: 100%;
-}
-
-.list-item-container::before {
-    border: none !important;
-}
-
-.note-list .list-item-container > * {
-    margin: 5px !important;
-    padding: 0 !important;
-    border: none !important;
-    font-size: var(--font-size) !important;
-}
-
-.note-list input[type="checkbox"] {
-    margin: 0 !important;
-    padding: 0 !important;
-    appearance: none;
-    min-width: 15px;
-    min-height: 15px;
-}
-
-.note-list input[type="checkbox"]:before {
-    display: inline-block;
-    content: "";
-    text-align: center;
-    border: 2px solid var(--color-border-dark);
-    border-radius: var(--border-radius);
-    min-width: 15px;
-    min-height: 15px;
-}
-
-.note-list  input[type="checkbox"]:checked:before {
-    content: "✓";
-    font-weight: bold;
-  }
-
-
-
-/**************************************************************************************************
- *  Search
- *************************************************************************************************/
-
-.rli-noteList > div > div > div:first-child  {
-    height: 50px !important;
-    background-color: var(--color-main-background) !important;
-    padding: 10px;
-    align-items: center;
-}
-
-.rli-noteList > div > div > div:first-child > * {
-    margin: 0 2px;
-}
-
-
-.search-bar{
-    border: medium none !important;
-    box-sizing: border-box;
-    color: var(--color-main-text);
-    cursor: text;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    outline: none;
-    border-radius: var(--border-radius);
-    background-color: var(--color-main-background);
-    box-shadow: 0 0 2px var(--color-box-shadow);
-    text-shadow: unset;
-}
-
-.search-bar > div {
-    align-items: center;
-}
-
-/* icon search */
-.rli-noteList > div span[class$="icon-search"] {
-  color: var(--icons) !important;
-    min-height: var(--element-height);
-    margin:0 !important;
-    margin-right: 5px !important;
-    opacity: .5;
-    height: var(--element-height);
-    display: none;
-}
-
-.rli-noteList > div > div > div:first-child  > div:last-child {
-    align-items: center;
-}
-
-.rli-noteList > div > div > div:first-child button {
-    background: transparent  !important;
-    color: var(--color-main-text) !important;
-    padding: 20px 0;
-    opacity: .8;
-    border-radius: 50px;
-    height: 20px;
-    width: 20px;
-    padding: 0;
-}
-
-.rli-noteList > div > div > div:first-child button:hover {
-    opacity: 1;
-    background-color: rgba(0,0,0,0.1) !important;
-}
-
-.rli-noteList > div > div > div:first-child button span {
-    color: var(--color-main-text) !important;
-    font-weight: bold !important;
+.item-list.note-list a>span {
+    color: var(--color-notelist-text);
 }

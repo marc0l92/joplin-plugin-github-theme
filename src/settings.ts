@@ -29,7 +29,7 @@ export class Settings {
             isEnum: true,
             options: EThemeVariant,
             label: 'Theme variant',
-            description: 'Dark theme or Light theme',
+            description: 'You must restart Joplin to apply the theme.',
         },
     }
 

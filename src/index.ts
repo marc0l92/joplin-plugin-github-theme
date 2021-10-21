@@ -42,7 +42,9 @@ joplin.plugins.register({
         })
         joplin.settings.onChange(async (event: ChangeEvent) => {
             await settings.read(event)
-            setTheme(themesStylesheets[settings.get('themeVariant')])
+            // I have no way to delete the previous CSS
+            // The user needs to restart Joplin to apply the changes
+            // setTheme(themesStylesheets[settings.get('themeVariant')])
         })
     },
 })

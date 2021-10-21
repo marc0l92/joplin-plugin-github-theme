@@ -2,43 +2,35 @@ import joplin from 'api'
 import { ChangeEvent } from 'api/JoplinSettings'
 import { Settings, EThemeVariant } from './settings'
 
-interface ITheme {
-    window: string,
-    note: string,
+const themesStylesheets = {
+    window: '/styles/window.css',
+    note: '/styles/note.css',
+    colors: {
+        dark: '/styles/dark/colors.css',
+        light: '/styles/light/colors.css',
+    }
 }
-interface IThemeMap {
-    [index: string]: ITheme
-}
-
-const themesStylesheets: IThemeMap = {
-    dark: {
-        window: '/styles/dark/window.css',
-        note: '/styles/dark/note.css',
-    },
-    light: {
-        window: '/styles/light/window.css',
-        note: '/styles/light/note.css',
-    },
-}
-
 
 joplin.plugins.register({
     onStart: async function () {
         const settings = new Settings()
         const installDir = await joplin.plugins.installationDir()
 
-        const setTheme = async (theme: ITheme) => {
-            if (theme) {
-                console.log('Setting theme:', installDir, theme)
-                await (joplin as any).window.loadChromeCssFile(installDir + theme.window)
-                await (joplin as any).window.loadNoteCssFile(installDir + theme.note)
+        const setTheme = async (themeColor) => {
+            if (themeColor) {
+                console.log('Setting theme color:', themeColor)
+                await (joplin as any).window.loadChromeCssFile(installDir + themesStylesheets.window)
+                await (joplin as any).window.loadChromeCssFile(installDir + themesStylesheets.colors[themeColor])
+
+                await (joplin as any).window.loadNoteCssFile(installDir + themesStylesheets.note)
+                await (joplin as any).window.loadNoteCssFile(installDir + themesStylesheets.colors[themeColor])
             } else {
                 throw 'Invalid theme selected'
             }
         }
 
         settings.register().then(() => {
-            setTheme(themesStylesheets[settings.get('themeVariant')])
+            setTheme(settings.get('themeVariant'))
         })
         joplin.settings.onChange(async (event: ChangeEvent) => {
             await settings.read(event)

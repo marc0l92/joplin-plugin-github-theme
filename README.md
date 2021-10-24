@@ -2,7 +2,7 @@
 
 Joplin theme with colors of GitHub.
 
-## 1. Install the plugin
+## Install the plugin
 
 ### Automatic installation
 

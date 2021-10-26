@@ -17,15 +17,13 @@ joplin.plugins.register({
         const installDir = await joplin.plugins.installationDir()
 
         const setTheme = async (themeColor) => {
-            if (themeColor) {
+            if (themeColor && themeColor in themesStylesheets.colors) {
                 console.log('Setting theme color:', themeColor)
                 await (joplin as any).window.loadChromeCssFile(installDir + themesStylesheets.window)
                 await (joplin as any).window.loadChromeCssFile(installDir + themesStylesheets.colors[themeColor])
 
                 await (joplin as any).window.loadNoteCssFile(installDir + themesStylesheets.note)
                 await (joplin as any).window.loadNoteCssFile(installDir + themesStylesheets.colors[themeColor])
-            } else {
-                throw 'Invalid theme selected'
             }
         }
 

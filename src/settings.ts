@@ -10,6 +10,7 @@ interface SettingItems {
 export enum EThemeVariant {
     dark = "Dark",
     light = "Light",
+    disabled = "Disabled"
 }
 
 export const SettingDefaults = {

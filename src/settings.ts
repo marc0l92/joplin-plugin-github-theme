@@ -7,7 +7,7 @@ interface SettingItems {
     [key: string]: SettingItem,
 }
 
-export enum EThemeVariant {
+enum EThemeVariant {
     dark = "Dark",
     light = "Light",
     disabled = "Disabled"

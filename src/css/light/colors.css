@@ -1,0 +1,28 @@
+:root {
+  /* Notebooks */
+  --color-github-notebooks-background: #ffffff;
+  --color-github-notebooks-text: #959da5;
+  --color-github-notebooks-text-active: #2f363d;
+  --color-github-notebooks-border: #e1e4e8;
+  /* Notes list */
+  --color-github-notelist-background: #f6f8fa;
+  --color-github-notelist-background-active: #e8eaed;
+  --color-github-notelist-text: #586069;
+  --color-github-notelist-text-active: #2f363d;
+  --color-github-notelist-border: #e1e4e8;
+  /* Note */
+  --color-github-note-background: #ffffff;
+  --color-github-note-background-active: #f6f8fa;
+  --color-github-note-text: #24292e;
+  --color-github-note-text-1: #6f42c1;
+  --color-github-note-text-2: #e36209;
+  --color-github-note-text-3: #005cc5;
+  --color-github-note-text-4: #d73a49;
+  --color-github-note-text-5: #22863a;
+  /**/
+  --color-github-bedge-background: #2188ff;
+  --color-github-bedge-text: #ffffff;
+  --color-github-button-background: #159739;
+  --color-github-button-text: #ffffff;
+  --color-github-link: #0366d6;
+}

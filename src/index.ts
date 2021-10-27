@@ -1,13 +1,13 @@
 import joplin from 'api'
 import { ChangeEvent } from 'api/JoplinSettings'
-import { Settings, EThemeVariant } from './settings'
+import { Settings } from './settings'
 
 const themesStylesheets = {
-    window: '/styles/window.css',
-    note: '/styles/note.css',
+    window: '/css/window.css',
+    note: '/css/note.css',
     colors: {
-        dark: '/styles/dark/colors.css',
-        light: '/styles/light/colors.css',
+        dark: '/css/dark/colors.css',
+        light: '/css/light/colors.css',
     }
 }
 

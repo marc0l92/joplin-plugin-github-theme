@@ -2,9 +2,10 @@
   "name": "joplin-plugin-github-theme",
   "version": "0.2.0",
   "scripts": {
-    "dist": "webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
+    "dist": "npm run sass && webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
     "prepare": "npm run dist",
-    "update": "npm install -g generator-joplin && yo joplin --update"
+    "update": "npm install -g generator-joplin && yo joplin --update",
+    "sass": "npx sass --no-source-map src/sass:src/css"
   },
   "license": "MIT",
   "keywords": [

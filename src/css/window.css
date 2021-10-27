@@ -1,0 +1,142 @@
+/**************************************************************************************************
+ *  sidebar
+ *************************************************************************************************/
+.resizableLayoutItem.rli-sideBar {
+  background-color: var(--color-github-sidebar-background);
+  color: var(--color-github-sidebar-text);
+  border-right: 1px solid var(--color-github-sidebar-border);
+}
+
+.sidebar {
+  background-color: var(--color-github-sidebar-background);
+  color: var(--color-github-sidebar-text);
+}
+.sidebar div {
+  color: var(--color-github-sidebar-text);
+}
+.sidebar i + span {
+  color: var(--color-github-sidebar-text-active);
+}
+.sidebar i[class|=icon] {
+  color: var(--color-github-sidebar-text-active);
+}
+.sidebar .list-item-container,
+.sidebar .list-item {
+  background-color: var(--color-github-sidebar-background);
+  color: var(--color-github-sidebar-text);
+}
+.sidebar .list-item-container.selected, .sidebar .list-item-container:hover, .sidebar .list-item-container:focus,
+.sidebar .list-item.selected,
+.sidebar .list-item:hover,
+.sidebar .list-item:focus {
+  background-color: var(--color-github-sidebar-background);
+}
+.sidebar .list-item-container.selected a, .sidebar .list-item-container:hover a, .sidebar .list-item-container:focus a,
+.sidebar .list-item.selected a,
+.sidebar .list-item:hover a,
+.sidebar .list-item:focus a {
+  color: var(--color-github-sidebar-text-active);
+}
+.sidebar button {
+  background-color: var(--color-github-button-background);
+  color: var(--color-github-button-text);
+  padding: 0;
+  margin: 0 5px;
+  border-width: 0;
+}
+.sidebar button > span {
+  color: var(--color-github-button-text) !important;
+}
+.sidebar button:hover {
+  background-color: var(--color-github-button-background-active);
+  border-color: none;
+}
+.sidebar button:hover > span {
+  color: var(--color-github-button-text);
+}
+.sidebar .note-count-label {
+  color: var(--color-github-link);
+}
+
+/**************************************************************************************************
+ *  notelist
+ *************************************************************************************************/
+.resizableLayoutItem.rli-noteList {
+  background-color: var(--color-github-notelist-background);
+  color: var(--color-github-notelist-text);
+  border-right: 1px solid var(--color-github-notelist-border);
+  /* Tutorial when there are no notes */
+}
+.resizableLayoutItem.rli-noteList .search-bar input {
+  background-color: var(--color-github-input-background);
+  color: var(--color-github-input-text);
+  border: 1px solid var(--color-github-notelist-border);
+}
+.resizableLayoutItem.rli-noteList .search-bar button,
+.resizableLayoutItem.rli-noteList .search-bar button:hover,
+.resizableLayoutItem.rli-noteList .search-bar button:focus {
+  /* Button to create a new note or todo */
+  background-color: transparent;
+}
+.resizableLayoutItem.rli-noteList .search-bar button > span {
+  color: var(--color-github-input-text) !important;
+}
+.resizableLayoutItem.rli-noteList button {
+  background-color: var(--color-github-button-background);
+}
+.resizableLayoutItem.rli-noteList button:hover, .resizableLayoutItem.rli-noteList button:focus {
+  background-color: var(--color-github-button-background-active);
+  border-color: transparent;
+}
+.resizableLayoutItem.rli-noteList button:hover > span, .resizableLayoutItem.rli-noteList button:focus > span {
+  color: var(--color-github-button-text);
+}
+.resizableLayoutItem.rli-noteList > div > div div:not(.list-item-container) {
+  background: none;
+  background-color: transparent !important;
+  border: 0;
+  color: var(--color-github-notelist-text) !important;
+}
+
+.item-list.note-list {
+  background-color: var(--color-github-notelist-background);
+  color: var(--color-github-notelist-text);
+}
+.item-list.note-list .list-item-container.selected, .item-list.note-list .list-item-container:hover, .item-list.note-list .list-item-container:focus {
+  background-color: var(--color-github-notelist-background-active);
+}
+.item-list.note-list .list-item-container::before {
+  border: 0;
+}
+.item-list.note-list .list-item-container > a {
+  color: var(--color-github-notelist-text-active) !important;
+}
+
+/**************************************************************************************************
+ *  modal-dialog
+ *************************************************************************************************/
+.modal-dialog {
+  color: var(--color-github-notelist-text-active) !important;
+  background-color: var(--color-github-notelist-background) !important;
+}
+.modal-dialog > div {
+  background-color: transparent !important;
+}
+.modal-dialog label {
+  color: var(--color-github-notelist-text-active) !important;
+}
+.modal-dialog input {
+  background-color: var(--color-github-input-background) !important;
+  color: var(--color-github-input-text) !important;
+  border: 1px solid var(--color-github-notelist-border) !important;
+  padding: 2px 5px;
+}
+.modal-dialog button {
+  background-color: var(--color-github-button-background) !important;
+  color: var(--color-github-button-text) !important;
+  border-width: 0 !important;
+}
+.modal-dialog button:hover, .modal-dialog button:focus {
+  background-color: var(--color-github-button-background-active) !important;
+  color: var(--color-github-button-text) !important;
+}

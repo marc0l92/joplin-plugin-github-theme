@@ -138,10 +138,6 @@
     color: var(--color-github-notelist-text-active) !important;
     background-color: var(--color-github-notelist-background) !important;
 
-    > div {
-        background-color: transparent !important;
-    }
-
     label {
         color: var(--color-github-notelist-text-active) !important;
     }
@@ -163,4 +159,27 @@
             color: var(--color-github-button-text) !important;
         }
     }
+
+    div.item-list > div {
+        // Result of search
+        background-color: var(--color-github-notelist-background) !important;
+        border-color: var(--color-github-notelist-border) !important;
+
+        &.selected,
+        &:hover,
+        &:focus {
+            background-color: var(--color-github-notelist-background-active) !important;
+        }
+
+        > div {
+            // Sections of result
+            color: var(--color-github-notelist-text) !important;
+
+            opacity: 1;
+            > span {
+                color: var(--color-github-notelist-text-active) !important;
+            }
+        }
+    }
 }
+

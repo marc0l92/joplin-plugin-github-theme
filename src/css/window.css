@@ -119,9 +119,6 @@
   color: var(--color-github-notelist-text-active) !important;
   background-color: var(--color-github-notelist-background) !important;
 }
-.modal-dialog > div {
-  background-color: transparent !important;
-}
 .modal-dialog label {
   color: var(--color-github-notelist-text-active) !important;
 }
@@ -139,4 +136,18 @@
 .modal-dialog button:hover, .modal-dialog button:focus {
   background-color: var(--color-github-button-background-active) !important;
   color: var(--color-github-button-text) !important;
+}
+.modal-dialog div.item-list > div {
+  background-color: var(--color-github-notelist-background) !important;
+  border-color: var(--color-github-notelist-border) !important;
+}
+.modal-dialog div.item-list > div.selected, .modal-dialog div.item-list > div:hover, .modal-dialog div.item-list > div:focus {
+  background-color: var(--color-github-notelist-background-active) !important;
+}
+.modal-dialog div.item-list > div > div {
+  color: var(--color-github-notelist-text) !important;
+  opacity: 1;
+}
+.modal-dialog div.item-list > div > div > span {
+  color: var(--color-github-notelist-text-active) !important;
 }

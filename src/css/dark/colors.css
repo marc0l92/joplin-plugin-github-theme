@@ -59,18 +59,16 @@ active : b4 t3
   --joplin-background-color4: #ffffff;
   --joplin-color4: #2d6bdc;
   --joplin-raised-background-color: var(--color-github-background3);
-  --joplin-raised-color: #222222;
+  --joplin-raised-color: var(--color-github-text3);
   --joplin-search-marker-background-color: #f7d26e;
   --joplin-search-marker-color: black;
   --joplin-warning-background-color: #ffd08d;
   --joplin-table-background-color: rgb(247, 247, 247);
   --joplin-code-background-color: rgb(243, 243, 243);
   --joplin-code-border-color: rgb(220, 220, 220);
-  --joplin-code-color: rgb(0, 0, 0);
+  --joplin-code-color: var(--color-github-text2);
   --joplin-block-quote-opacity: 0.7;
-  --joplin-code-mirror-theme: default;
-  --joplin-code-theme-css: atom-one-light.css;
   --joplin-header-background-color: #f0f0f0;
   --joplin-text-selection-color: #0096ff;
-  --joplin-color-bright2: #ffffff;
+  --joplin-color-bright2: var(--color-github-text3);
 }

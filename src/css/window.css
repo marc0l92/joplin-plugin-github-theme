@@ -2,57 +2,57 @@
  *  sidebar
  *************************************************************************************************/
 .resizableLayoutItem.rli-sideBar {
-  background-color: var(--color-github-sidebar-background);
-  color: var(--color-github-sidebar-text);
-  border-right: 1px solid var(--color-github-sidebar-border);
+  background-color: var(--color-github-background2);
+  color: var(--color-github-text1);
+  border-right: 1px solid var(--color-github-border);
 }
 
 .sidebar {
-  background-color: var(--color-github-sidebar-background);
-  color: var(--color-github-sidebar-text);
+  background-color: var(--color-github-background2);
+  color: var(--color-github-text1);
 }
 .sidebar div {
-  color: var(--color-github-sidebar-text);
+  color: var(--color-github-text1);
 }
 .sidebar i + span {
-  color: var(--color-github-sidebar-text-active);
+  color: var(--color-github-text3);
 }
 .sidebar i[class|=icon] {
-  color: var(--color-github-sidebar-text-active);
+  color: var(--color-github-text3);
 }
 .sidebar .list-item-container,
 .sidebar .list-item {
-  background-color: var(--color-github-sidebar-background);
-  color: var(--color-github-sidebar-text);
+  background-color: var(--color-github-background2);
+  color: var(--color-github-text1);
 }
 .sidebar .list-item-container.selected, .sidebar .list-item-container:hover, .sidebar .list-item-container:focus,
 .sidebar .list-item.selected,
 .sidebar .list-item:hover,
 .sidebar .list-item:focus {
-  background-color: var(--color-github-sidebar-background);
+  background-color: var(--color-github-background2);
 }
 .sidebar .list-item-container.selected a, .sidebar .list-item-container:hover a, .sidebar .list-item-container:focus a,
 .sidebar .list-item.selected a,
 .sidebar .list-item:hover a,
 .sidebar .list-item:focus a {
-  color: var(--color-github-sidebar-text-active);
+  color: var(--color-github-text3);
 }
 .sidebar button {
-  background-color: var(--color-github-button-background);
-  color: var(--color-github-button-text);
+  background-color: var(--color-github-button-background1);
+  color: var(--color-github-button-text1);
   padding: 0;
   margin: 0 5px;
   border-width: 0;
 }
 .sidebar button > span {
-  color: var(--color-github-button-text) !important;
+  color: var(--color-github-button-text1) !important;
 }
 .sidebar button:hover {
-  background-color: var(--color-github-button-background-active);
+  background-color: var(--color-github-button-background2);
   border-color: none;
 }
 .sidebar button:hover > span {
-  color: var(--color-github-button-text);
+  color: var(--color-github-button-text1);
 }
 .sidebar .note-count-label {
   color: var(--color-github-link);
@@ -62,15 +62,15 @@
  *  notelist
  *************************************************************************************************/
 .resizableLayoutItem.rli-noteList {
-  background-color: var(--color-github-notelist-background);
-  color: var(--color-github-notelist-text);
-  border-right: 1px solid var(--color-github-notelist-border);
+  background-color: var(--color-github-background1);
+  color: var(--color-github-text2);
+  border-right: 1px solid var(--color-github-border);
   /* Tutorial when there are no notes */
 }
 .resizableLayoutItem.rli-noteList .search-bar input {
-  background-color: var(--color-github-input-background);
+  background-color: var(--color-github-input-background1);
   color: var(--color-github-input-text);
-  border: 1px solid var(--color-github-notelist-border);
+  border: 1px solid var(--color-github-border);
 }
 .resizableLayoutItem.rli-noteList .search-bar button,
 .resizableLayoutItem.rli-noteList .search-bar button:hover,
@@ -82,72 +82,72 @@
   color: var(--color-github-input-text) !important;
 }
 .resizableLayoutItem.rli-noteList button {
-  background-color: var(--color-github-button-background);
+  background-color: var(--color-github-button-background1);
 }
 .resizableLayoutItem.rli-noteList button:hover, .resizableLayoutItem.rli-noteList button:focus {
-  background-color: var(--color-github-button-background-active);
+  background-color: var(--color-github-button-background2);
   border-color: transparent;
 }
 .resizableLayoutItem.rli-noteList button:hover > span, .resizableLayoutItem.rli-noteList button:focus > span {
-  color: var(--color-github-button-text);
+  color: var(--color-github-button-text1);
 }
 .resizableLayoutItem.rli-noteList > div > div div:not(.list-item-container) {
   background: none;
   background-color: transparent !important;
   border: 0;
-  color: var(--color-github-notelist-text) !important;
+  color: var(--color-github-text2) !important;
 }
 
 .item-list.note-list {
-  background-color: var(--color-github-notelist-background);
-  color: var(--color-github-notelist-text);
+  background-color: var(--color-github-background1);
+  color: var(--color-github-text2);
 }
 .item-list.note-list .list-item-container.selected, .item-list.note-list .list-item-container:hover, .item-list.note-list .list-item-container:focus {
-  background-color: var(--color-github-notelist-background-active);
+  background-color: var(--color-github-background3);
 }
 .item-list.note-list .list-item-container::before {
   border: 0;
 }
 .item-list.note-list .list-item-container > a {
-  color: var(--color-github-notelist-text-active) !important;
+  color: var(--color-github-text3) !important;
 }
 
 /**************************************************************************************************
  *  modal-dialog
  *************************************************************************************************/
 .modal-dialog {
-  color: var(--color-github-notelist-text-active) !important;
-  background-color: var(--color-github-notelist-background) !important;
+  background-color: var(--color-github-background1) !important;
+  color: var(--color-github-text2) !important;
 }
 .modal-dialog label {
-  color: var(--color-github-notelist-text-active) !important;
+  color: var(--color-github-text2) !important;
 }
 .modal-dialog input {
-  background-color: var(--color-github-input-background) !important;
+  background-color: var(--color-github-input-background1) !important;
   color: var(--color-github-input-text) !important;
-  border: 1px solid var(--color-github-notelist-border) !important;
+  border: 1px solid var(--color-github-border) !important;
   padding: 2px 5px;
 }
 .modal-dialog button {
-  background-color: var(--color-github-button-background) !important;
-  color: var(--color-github-button-text) !important;
+  background-color: var(--color-github-button-background1) !important;
+  color: var(--color-github-button-text1) !important;
   border-width: 0 !important;
 }
 .modal-dialog button:hover, .modal-dialog button:focus {
-  background-color: var(--color-github-button-background-active) !important;
-  color: var(--color-github-button-text) !important;
+  background-color: var(--color-github-button-background2) !important;
+  color: var(--color-github-button-text1) !important;
 }
 .modal-dialog div.item-list > div {
-  background-color: var(--color-github-notelist-background) !important;
-  border-color: var(--color-github-notelist-border) !important;
+  background-color: var(--color-github-background1) !important;
+  border-color: var(--color-github-border) !important;
 }
 .modal-dialog div.item-list > div.selected, .modal-dialog div.item-list > div:hover, .modal-dialog div.item-list > div:focus {
-  background-color: var(--color-github-notelist-background-active) !important;
+  background-color: var(--color-github-background3) !important;
 }
 .modal-dialog div.item-list > div > div {
-  color: var(--color-github-notelist-text) !important;
+  color: var(--color-github-text2) !important;
   opacity: 1;
 }
 .modal-dialog div.item-list > div > div > span {
-  color: var(--color-github-notelist-text-active) !important;
+  color: var(--color-github-text3) !important;
 }

@@ -3,56 +3,56 @@
  *************************************************************************************************/
 
 .resizableLayoutItem.rli-sideBar {
-    background-color: var(--color-github-sidebar-background);
-    color: var(--color-github-sidebar-text);
-    border-right: 1px solid var(--color-github-sidebar-border);
+    background-color: var(--color-github-background2);
+    color: var(--color-github-text1);
+    border-right: 1px solid var(--color-github-border);
 }
 
 .sidebar {
-    background-color: var(--color-github-sidebar-background);
-    color: var(--color-github-sidebar-text);
+    background-color: var(--color-github-background2);
+    color: var(--color-github-text1);
 
     div {
-        color: var(--color-github-sidebar-text);
+        color: var(--color-github-text1);
     }
     i + span {
-        color: var(--color-github-sidebar-text-active);
+        color: var(--color-github-text3);
     }
     i[class|="icon"] {
-        color: var(--color-github-sidebar-text-active);
+        color: var(--color-github-text3);
     }
 
     .list-item-container,
     .list-item {
-        background-color: var(--color-github-sidebar-background);
-        color: var(--color-github-sidebar-text);
+        background-color: var(--color-github-background2);
+        color: var(--color-github-text1);
 
         &.selected,
         &:hover,
         &:focus {
-            background-color: var(--color-github-sidebar-background);
+            background-color: var(--color-github-background2);
 
             a {
-                color: var(--color-github-sidebar-text-active);
+                color: var(--color-github-text3);
             }
         }
     }
 
     button {
-        background-color: var(--color-github-button-background);
-        color: var(--color-github-button-text);
+        background-color: var(--color-github-button-background1);
+        color: var(--color-github-button-text1);
         padding: 0;
         margin: 0 5px;
         border-width: 0;
         > span {
-            color: var(--color-github-button-text) !important;
+            color: var(--color-github-button-text1) !important;
         }
 
         &:hover {
-            background-color: var(--color-github-button-background-active);
+            background-color: var(--color-github-button-background2);
             border-color: none;
             > span {
-                color: var(--color-github-button-text);
+                color: var(--color-github-button-text1);
             }
         }
     }
@@ -67,15 +67,15 @@
  *************************************************************************************************/
 
 .resizableLayoutItem.rli-noteList {
-    background-color: var(--color-github-notelist-background);
-    color: var(--color-github-notelist-text);
-    border-right: 1px solid var(--color-github-notelist-border);
+    background-color: var(--color-github-background1);
+    color: var(--color-github-text2);
+    border-right: 1px solid var(--color-github-border);
 
     .search-bar {
         input {
-            background-color: var(--color-github-input-background);
+            background-color: var(--color-github-input-background1);
             color: var(--color-github-input-text);
-            border: 1px solid var(--color-github-notelist-border);
+            border: 1px solid var(--color-github-border);
         }
 
         button,
@@ -90,14 +90,14 @@
     }
 
     button {
-        background-color: var(--color-github-button-background);
+        background-color: var(--color-github-button-background1);
         &:hover,
         &:focus {
-            background-color: var(--color-github-button-background-active);
+            background-color: var(--color-github-button-background2);
             border-color: transparent;
 
             > span {
-                color: var(--color-github-button-text);
+                color: var(--color-github-button-text1);
             }
         }
     }
@@ -107,25 +107,25 @@
         background: none;
         background-color: transparent !important;
         border: 0;
-        color: var(--color-github-notelist-text) !important;
+        color: var(--color-github-text2) !important;
     }
 }
 
 .item-list.note-list {
-    background-color: var(--color-github-notelist-background);
-    color: var(--color-github-notelist-text);
+    background-color: var(--color-github-background1);
+    color: var(--color-github-text2);
 
     .list-item-container {
         &.selected,
         &:hover,
         &:focus {
-            background-color: var(--color-github-notelist-background-active);
+            background-color: var(--color-github-background3);
         }
         &::before {
             border: 0;
         }
         > a {
-            color: var(--color-github-notelist-text-active) !important;
+            color: var(--color-github-text3) !important;
         }
     }
 }
@@ -135,49 +135,49 @@
  *************************************************************************************************/
 
 .modal-dialog {
-    color: var(--color-github-notelist-text-active) !important;
-    background-color: var(--color-github-notelist-background) !important;
+    background-color: var(--color-github-background1) !important;
+    color: var(--color-github-text2) !important;
 
     label {
-        color: var(--color-github-notelist-text-active) !important;
+        color: var(--color-github-text2) !important;
     }
 
     input {
-        background-color: var(--color-github-input-background) !important;
+        background-color: var(--color-github-input-background1) !important;
         color: var(--color-github-input-text) !important;
-        border: 1px solid var(--color-github-notelist-border) !important;
+        border: 1px solid var(--color-github-border) !important;
         padding: 2px 5px;
     }
 
     button {
-        background-color: var(--color-github-button-background) !important;
-        color: var(--color-github-button-text) !important;
+        background-color: var(--color-github-button-background1) !important;
+        color: var(--color-github-button-text1) !important;
         border-width: 0 !important;
         &:hover,
         &:focus {
-            background-color: var(--color-github-button-background-active) !important;
-            color: var(--color-github-button-text) !important;
+            background-color: var(--color-github-button-background2) !important;
+            color: var(--color-github-button-text1) !important;
         }
     }
 
     div.item-list > div {
         // Result of search
-        background-color: var(--color-github-notelist-background) !important;
-        border-color: var(--color-github-notelist-border) !important;
+        background-color: var(--color-github-background1) !important;
+        border-color: var(--color-github-border) !important;
 
         &.selected,
         &:hover,
         &:focus {
-            background-color: var(--color-github-notelist-background-active) !important;
+            background-color: var(--color-github-background3) !important;
         }
 
         > div {
             // Sections of result
-            color: var(--color-github-notelist-text) !important;
+            color: var(--color-github-text2) !important;
 
             opacity: 1;
             > span {
-                color: var(--color-github-notelist-text-active) !important;
+                color: var(--color-github-text3) !important;
             }
         }
     }

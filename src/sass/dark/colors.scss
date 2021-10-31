@@ -1,73 +1,81 @@
+/*
+Palette 1
+default: b2 t1
+active : b2 t3
+
+Palette 2
+default: b1 t2
+active : b3 t3
+
+Palette 3
+default: b2 t3
+active : b4 t3
+*/
+
 :root {
-    /* sidebar */
-    --color-github-sidebar-background: #24292e;
-    --color-github-sidebar-text: #6a737d;
-    --color-github-sidebar-text-active: #e1e4e8;
-    --color-github-sidebar-border: #1b1f23;
-    /* Notes list */
-    --color-github-notelist-background: #1f2428;
-    --color-github-notelist-background-active: #282e34;
-    --color-github-notelist-text: #d1d5da;
-    --color-github-notelist-text-active: #e1e4e8;
-    --color-github-notelist-border: #1b1f23;
-    /* Note */
-    --color-github-note-background: #24292e;
-    --color-github-note-background-active: #2b3036;
-    --color-github-note-text: #e1e4e8;
-    --color-github-note-text-1: #b392f0;
-    --color-github-note-text-2: #ffab70;
-    --color-github-note-text-3: #79b8ff;
-    --color-github-note-text-4: #f97583;
-    --color-github-note-text-5: #85e89d;
-    /**/
-    --color-github-bedge-background: #0366d6;
-    --color-github-bedge-text: #ffffff;
-    --color-github-button-background: #176f2c;
-    --color-github-button-background-active: #22863a;
-    --color-github-button-text: #dcffe4;
+    --color-github-background1: #1f2428;
+    --color-github-background2: #24292e;
+    --color-github-background3: #282e34;
+    --color-github-background4: #2b3036;
+
+    --color-github-border: #1b1f23;
+
+    --color-github-text1: #6a737d;
+    --color-github-text2: #d1d5da;
+    --color-github-text3: #e1e4e8;
+
+    --color-github-highlight-text1: #b392f0;
+    --color-github-highlight-text2: #ffab70;
+    --color-github-highlight-text3: #79b8ff;
+    --color-github-highlight-text4: #f97583;
+    --color-github-highlight-text5: #85e89d;
+
+    --color-github-button-background1: #176f2c;
+    --color-github-button-background2: #22863a;
+    --color-github-button-text1: #dcffe4;
+
     --color-github-link: #79b8ff;
-    --color-github-input-background: #2f363d;
-    --color-github-input-text: #e1e4e8;
+    --color-github-bedge: #0366d6;
+
+    --color-github-input-background1: #2f363d;
 }
 
 /* To change the colors of plugins */
 :root {
-	--joplin-appearance: dark;
-	--joplin-background-color: #24292e;
-	--joplin-background-color-transparent: rgba(255,255,255,0.9);
-	--joplin-odd-background-color: #eeeeee;
-	--joplin-color: #32373F;
-	--joplin-color-error: red;
-	--joplin-color-warn: rgb(228,86,0);
-	--joplin-color-warn-url: #155BDA;
-	--joplin-color-faded: #7C8B9E;
-	--joplin-color-bright: #000000;
-	--joplin-divider-color: #dddddd;
-	--joplin-selected-color: #e5e5e5;
-	--joplin-url-color: #155BDA;
-	--joplin-background-color2: #313640;
-	--joplin-color2: #ffffff;
-	--joplin-selected-color2: #131313;
-	--joplin-color-error2: #ff6c6c;
-	--joplin-color-warn2: #ffcb81;
-	--joplin-background-color3: #F4F5F6;
-	--joplin-background-color-hover3: #CBDAF1;
-	--joplin-color3: #738598;
-	--joplin-background-color4: #ffffff;
-	--joplin-color4: #2D6BDC;
-	--joplin-raised-background-color: #e5e5e5;
-	--joplin-raised-color: #222222;
-	--joplin-search-marker-background-color: #F7D26E;
-	--joplin-search-marker-color: black;
-	--joplin-warning-background-color: #FFD08D;
-	--joplin-table-background-color: rgb(247, 247, 247);
-	--joplin-code-background-color: rgb(243, 243, 243);
-	--joplin-code-border-color: rgb(220, 220, 220);
-	--joplin-code-color: rgb(0,0,0);
-	--joplin-block-quote-opacity: 0.7;
-	--joplin-code-mirror-theme: default;
-	--joplin-code-theme-css: atom-one-light.css;
-	--joplin-header-background-color: #F0F0F0;
-	--joplin-text-selection-color: #0096FF;
-	--joplin-color-bright2: #ffffff;
+    --joplin-appearance: dark;
+    --joplin-background-color: var(--color-github-background1);
+    --joplin-background-color-transparent: var(--color-github-background2);
+    --joplin-odd-background-color: var(--color-github-background2);
+    --joplin-color: var(--color-github-text2);
+    --joplin-color-error: var(--color-github-highlight-text4);
+    --joplin-color-warn: var(--color-github-highlight-text2);
+    --joplin-color-warn-url: var(--color-github-link);
+    --joplin-color-faded: var(--color-github-text1);
+    --joplin-color-bright: var(--color-github-text3);
+    --joplin-divider-color: var(--color-github-border);
+    --joplin-selected-color: var(--color-github-background3);
+    --joplin-url-color: var(--color-github-link);
+    --joplin-background-color2: var(--color-github-background2);
+    --joplin-color2: #ffffff;
+    --joplin-selected-color2: #131313;
+    --joplin-color-error2: #ff6c6c;
+    --joplin-color-warn2: #ffcb81;
+    --joplin-background-color3: #f4f5f6;
+    --joplin-background-color-hover3: #cbdaf1;
+    --joplin-color3: #738598;
+    --joplin-background-color4: #ffffff;
+    --joplin-color4: #2d6bdc;
+    --joplin-raised-background-color: var(--color-github-background3);
+    --joplin-raised-color: var(--color-github-text3);
+    --joplin-search-marker-background-color: #f7d26e;
+    --joplin-search-marker-color: black;
+    --joplin-warning-background-color: #ffd08d;
+    --joplin-table-background-color: rgb(247, 247, 247);
+    --joplin-code-background-color: rgb(243, 243, 243);
+    --joplin-code-border-color: rgb(220, 220, 220);
+    --joplin-code-color: var(--color-github-text2);
+    --joplin-block-quote-opacity: 0.7;
+    --joplin-header-background-color: #f0f0f0;
+    --joplin-text-selection-color: #0096ff;
+    --joplin-color-bright2: var(--color-github-text3);
 }
